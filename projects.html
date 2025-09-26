@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ads — gameads</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">gameads</div>
+    <button id="navToggleProjects" class="nav-toggle" aria-label="toggle navigation">menu</button>
+    <nav id="siteNavProjects" class="site-nav">
+      <a href="index.html" class="nav-link">home</a>
+      <a href="about.html" class="nav-link">about</a>
+      <a href="projects.html" class="nav-link active">ads</a>
+      <a href="contact.html" class="nav-link">contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section>
+      <h1>ad gallery</h1>
+      <p>filter by format</p>
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">all</button>
+        <button class="filter-btn" data-filter="video">video</button>
+        <button class="filter-btn" data-filter="banner">banner</button>
+        <button class="filter-btn" data-filter="playable">playable</button>
+      </div>
+
+      <div id="projectsGrid" class="projects-grid">
+        <!-- project cards rendered here or via static html -->
+        <article class="project-card" data-type="video">
+          <div class="project-thumb" style="background-image:url('images/image1.png')"></div>
+          <h3>arena clash — trailer</h3>
+          <p>short trailer edit optimized for retention.</p>
+        </article>
+
+        <article class="project-card" data-type="playable">
+          <div class="project-thumb" style="background-image:url('images/image2.png')"></div>
+          <h3>void runners — playable</h3>
+          <p>mini playable experience for acquisition campaigns.</p>
+        </article>
+
+        <article class="project-card" data-type="banner">
+          <div class="project-thumb" style="background-image:url('images/image3.png')"></div>
+          <h3>ghost ops — banner set</h3>
+          <p>interactive html5 banner set for cross-site campaigns.</p>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div>© gameads 2025</div>
+    <div class="footer-links">
+      <a href="index.html">home</a>
+      <a href="contact.html">contact</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

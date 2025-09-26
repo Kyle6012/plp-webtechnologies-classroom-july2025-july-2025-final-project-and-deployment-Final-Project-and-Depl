@@ -1,0 +1,57 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>contact — gameads</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">gameads</div>
+    <button id="navToggleContact" class="nav-toggle" aria-label="toggle navigation">menu</button>
+    <nav id="siteNavContact" class="site-nav">
+      <a href="index.html" class="nav-link">home</a>
+      <a href="about.html" class="nav-link">about</a>
+      <a href="projects.html" class="nav-link">ads</a>
+      <a href="contact.html" class="nav-link active">contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>work with us</h1>
+    <p>use the form or email hello@gameads.example</p>
+
+    <form id="contactForm" class="contact-form" novalidate>
+      <label>
+        name
+        <input type="text" name="name" id="name" required>
+      </label>
+
+      <label>
+        email
+        <input type="email" name="email" id="email" required>
+      </label>
+
+      <label>
+        message
+        <textarea name="message" id="message" rows="6" required></textarea>
+      </label>
+
+      <button type="submit" class="btn">send</button>
+      <p id="formMsg" class="form-msg" aria-live="polite"></p>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div>© gameads 2025</div>
+    <div class="footer-links">
+      <a href="index.html">home</a>
+      <a href="about.html">about</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

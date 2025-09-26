@@ -1,0 +1,63 @@
+root{
+  --bg:#0f1720;
+  --card:#0b1220;
+  --accent:#6ad1ff;
+  --muted:#9aa6b2;
+  --glass:rgba(255,255,255,0.03);
+  --max-width:1100px;
+}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;line-height:1.45;margin:0;background:linear-gradient(180deg,#05060a 0%,#0f1720 100%);color:#e6eef6}
+.container{max-width:var(--max-width);margin:0 auto;padding:2rem}
+.site-header{display:flex;align-items:center;justify-content:space-between;padding:1rem 2rem;background:transparent;position:sticky;top:0;z-index:10}
+.brand{font-weight:700;letter-spacing:1px}
+.nav-toggle{display:none;background:transparent;border:1px solid rgba(255,255,255,0.06);padding:.5rem 1rem;border-radius:6px;color:var(--accent);cursor:pointer}
+.site-nav{display:flex;gap:1rem}
+.site-nav a{color:var(--muted);text-decoration:none;padding:.5rem .75rem;border-radius:6px}
+.site-nav a.active, .site-nav a:hover{color:var(--accent);background:var(--glass)}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1fr 360px;gap:2rem;align-items:center;padding:3rem 2rem;max-width:var(--max-width);margin:0 auto}
+.hero-inner h1{font-size:2.25rem;margin:0}
+.hero-inner p{color:var(--muted);margin:.75rem 0}
+.btn{display:inline-block;background:var(--accent);color:#042028;padding:.6rem 1rem;border-radius:8px;text-decoration:none;font-weight:600}
+.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--accent);}
+.hero-art{height:220px;background:linear-gradient(135deg,#14233a,#0a1f2b);border-radius:12px;box-shadow:0 8px 30px rgba(0,0,0,0.6)}
+
+.features{padding:2rem;background:transparent}
+.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;max-width:var(--max-width);margin:0 auto}
+.feature{background:var(--card);padding:1.25rem;border-radius:8px}
+.feature h3{margin:0 0 .5rem}
+
+.latest{padding:2rem}
+.card-row{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.card{background:var(--card);width:300px;border-radius:8px;overflow:hidden}
+.card-media{height:140px;background-size:cover;background-position:center}
+.card-body{padding:1rem}
+.card-btn{display:inline-block;margin-top:.5rem;text-decoration:none;color:var(--accent)}
+
+.site-footer{display:flex;justify-content:space-between;padding:1.25rem 2rem;color:var(--muted)}
+
+/* projects */
+.filters{display:flex;gap:.5rem;margin:1rem 0}
+.filter-btn{background:transparent;border:1px solid rgba(255,255,255,0.04);padding:.4rem .6rem;border-radius:6px;color:var(--muted);cursor:pointer}
+.filter-btn.active{background:var(--glass);color:var(--accent)}
+.projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.project-card{background:var(--card);padding:0;border-radius:8px;overflow:hidden}
+.project-thumb{height:140px;background-size:cover;background-position:center}
+.project-card h3{margin:.75rem .75rem 0}
+.project-card p{margin:.5rem .75rem 1rem;color:var(--muted)}
+
+/* contact form */
+.contact-form{max-width:640px;margin:1rem auto;display:flex;flex-direction:column;gap:.75rem}
+.contact-form label{display:flex;flex-direction:column;color:var(--muted)}
+.contact-form input, .contact-form textarea{padding:.6rem;border-radius:6px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:inherit}
+.form-msg{color:var(--accent);min-height:1.2rem}
+
+/* responsive */
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr; padding:2rem}
+  .site-nav{display:none;position:absolute;right:1rem;top:64px;background:var(--card);padding:.5rem;border-radius:8px;flex-direction:column}
+  .nav-toggle{display:block}
+  .feature-grid{grid-template-columns:1fr}
+}
