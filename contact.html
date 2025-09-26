@@ -1,54 +1,70 @@
-
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>contact — gameads</title>
+  <title>Contact — Gamerads</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="site-header">
-    <div class="brand">gameads</div>
-    <button id="navToggleContact" class="nav-toggle" aria-label="toggle navigation">menu</button>
-    <nav id="siteNavContact" class="site-nav">
-      <a href="index.html" class="nav-link">home</a>
-      <a href="about.html" class="nav-link">about</a>
-      <a href="projects.html" class="nav-link">ads</a>
-      <a href="contact.html" class="nav-link active">contact</a>
+    <div class="brand">Gamerads</div>
+    <button id="navToggle" class="nav-toggle" aria-label="toggle navigation">menu</button>
+    <nav id="siteNav" class="site-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="projects.html" class="nav-link">Ads</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
     </nav>
   </header>
 
   <main class="container">
-    <h1>work with us</h1>
-    <p>use the form or email hello@gameads.example</p>
+    <h1>Work With Us</h1>
+    <p>Use the form below or email us at <a href="mailto:hello@gamerads.example">hello@gamerads.example</a></p>
 
     <form id="contactForm" class="contact-form" novalidate>
       <label>
-        name
-        <input type="text" name="name" id="name" required>
+        Name
+        <input type="text" name="name" id="name" required placeholder="Your Name">
       </label>
 
       <label>
-        email
-        <input type="email" name="email" id="email" required>
+        Email
+        <input type="email" name="email" id="email" required placeholder="Your Email Address">
       </label>
 
       <label>
-        message
-        <textarea name="message" id="message" rows="6" required></textarea>
+        Message
+        <textarea name="message" id="message" rows="6" required placeholder="Tell us about your project..."></textarea>
       </label>
 
-      <button type="submit" class="btn">send</button>
+      <button type="submit" class="btn">Send Message</button>
       <p id="formMsg" class="form-msg" aria-live="polite"></p>
     </form>
   </main>
 
   <footer class="site-footer">
-    <div>© gameads 2025</div>
-    <div class="footer-links">
-      <a href="index.html">home</a>
-      <a href="about.html">about</a>
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h3>Gamerads</h3>
+        <p>High-Impact Gaming Ads That Convert.</p>
+      </div>
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <a href="#">Twitter</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Instagram</a>
+      </div>
+      <div class="footer-nav">
+        <h4>Navigate</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Ads</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Gamerads. All Rights Reserved.</p>
     </div>
   </footer>
 

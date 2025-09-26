@@ -3,62 +3,80 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>ads — gameads</title>
+  <title>Ad Gallery — Gamerads</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="site-header">
-    <div class="brand">gameads</div>
-    <button id="navToggleProjects" class="nav-toggle" aria-label="toggle navigation">menu</button>
-    <nav id="siteNavProjects" class="site-nav">
-      <a href="index.html" class="nav-link">home</a>
-      <a href="about.html" class="nav-link">about</a>
-      <a href="projects.html" class="nav-link active">ads</a>
-      <a href="contact.html" class="nav-link">contact</a>
+    <div class="brand">Gamerads</div>
+    <button id="navToggle" class="nav-toggle" aria-label="toggle navigation">menu</button>
+    <nav id="siteNav" class="site-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="projects.html" class="nav-link active">Ads</a>
+      <a href="contact.html" class="nav-link">Contact</a>
     </nav>
   </header>
 
   <main class="container">
-    <section>
-      <h1>ad gallery</h1>
-      <p>filter by format</p>
-      <div class="filters">
-        <button class="filter-btn active" data-filter="all">all</button>
-        <button class="filter-btn" data-filter="video">video</button>
-        <button class="filter-btn" data-filter="banner">banner</button>
-        <button class="filter-btn" data-filter="playable">playable</button>
-      </div>
+    <div class="content-card">
+      <section>
+        <h1>Ad Gallery</h1>
+        <p>Filter by ad format to see our work.</p>
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="video">Video</button>
+          <button class="filter-btn" data-filter="banner">Banner</button>
+          <button class="filter-btn" data-filter="playable">Playable</button>
+        </div>
 
-      <div id="projectsGrid" class="projects-grid">
-        <!-- project cards rendered here or via static html -->
-        <article class="project-card" data-type="video">
-          <div class="project-thumb" style="background-image:url('images/image1.png')"></div>
-          <h3>arena clash — trailer</h3>
-          <p>short trailer edit optimized for retention.</p>
-        </article>
+        <div id="projectsGrid" class="projects-grid">
+          <!-- project cards rendered here or via static html -->
+          <article class="project-card" data-type="video">
+            <div class="project-thumb" style="background-image:url('images/image1.png')"></div>
+            <h3>Arena Clash — Trailer</h3>
+            <p>A short trailer edit optimized for viewer retention.</p>
+          </article>
 
-        <article class="project-card" data-type="playable">
-          <div class="project-thumb" style="background-image:url('images/image2.png')"></div>
-          <h3>void runners — playable</h3>
-          <p>mini playable experience for acquisition campaigns.</p>
-        </article>
+          <article class="project-card" data-type="playable">
+            <div class="project-thumb" style="background-image:url('images/image2.png')"></div>
+            <h3>Void Runners — Playable</h3>
+            <p>A mini playable experience for user acquisition campaigns.</p>
+          </article>
 
-        <article class="project-card" data-type="banner">
-          <div class="project-thumb" style="background-image:url('images/image3.png')"></div>
-          <h3>ghost ops — banner set</h3>
-          <p>interactive html5 banner set for cross-site campaigns.</p>
-        </article>
+          <article class="project-card" data-type="banner">
+            <div class="project-thumb" style="background-image:url('images/image3.png')"></div>
+            <h3>Ghost Ops — Banner Set</h3>
+            <p>An interactive HTML5 banner set for cross-site campaigns.</p>
+          </article>
 
-      </div>
-    </section>
-
+        </div>
+      </section>
+    </div>
   </main>
 
   <footer class="site-footer">
-    <div>© gameads 2025</div>
-    <div class="footer-links">
-      <a href="index.html">home</a>
-      <a href="contact.html">contact</a>
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h3>Gamerads</h3>
+        <p>High-Impact Gaming Ads That Convert.</p>
+      </div>
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <a href="#">Twitter</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Instagram</a>
+      </div>
+      <div class="footer-nav">
+        <h4>Navigate</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Ads</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Gamerads. All Rights Reserved.</p>
     </div>
   </footer>
 
